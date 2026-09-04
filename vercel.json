@@ -1,11 +1,6 @@
 {
+  "cleanUrls": true,
   "rewrites": [
-    { "source": "/", "destination": "/index.html" }
-  ],
-  "functions": {
-    "api/agent.ts": {
-      "runtime": "nodejs20",
-      "maxDuration": 30
-    }
-  }
+    { "source": "/(.*)", "destination": "/$1" }
+  ]
 }
